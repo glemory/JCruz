@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JCruz | Curadoria & Design</title>
+    <title>J Cruz | Curadoria & Design</title>
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jcruz.digital/" />
@@ -51,6 +51,7 @@
         text-decoration: none;
       }
 
+      /* ----------------- CABEÇALHO ----------------- */
       header {
         position: sticky;
         top: 0;
@@ -70,17 +71,9 @@
         gap: 1rem;
       }
 
-      .brand-visual {
-        font-family: var(--font-display);
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -2px;
-        color: var(--accent-color);
-      }
-
       .brand-text {
         font-family: var(--font-display);
-        font-size: 1rem;
+        font-size: 1.5rem; /* AUMENTEI AQUI - era 1rem */
         letter-spacing: 4px;
         text-transform: uppercase;
         font-weight: 500;
@@ -109,13 +102,13 @@
         overflow: hidden;
       }
 
-      /* Botão Shop (Lady Gaga Style) - Agora com borda fina e hover elegante */
+      /* Botão Shop (Lady Gaga Style) */
       .button-shop {
         background: transparent;
         color: var(--text-color);
         border: 1px solid rgba(255, 255, 255, 0.4);
         padding: 0.5rem 1.5rem;
-        border-radius: 0; /* Botões da Gaga costumam ser bem retangulares */
+        border-radius: 0;
       }
 
       .button-shop:hover {
@@ -252,7 +245,6 @@
         <a class="button button-secondary" href="#servicos">Moda</a>
         <a class="button button-secondary" href="#projetos">Música</a>
         <a class="button button-secondary" href="#projetos">Teatro</a>
-        <!-- Botão Shop inspirado na Lady Gaga -->
         <a class="button button-shop" href="https://laranja-desapegada.netlify.app/" target="_blank">Shop</a>
         <a class="button button-primary" href="#contato">Contato</a>
       </nav>
