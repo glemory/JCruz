@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JCruz</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seusiteexemplo.com/" />
+    <meta property="og:title" content="JCruz" />
+    <meta property="og:description" content="Design de sites, desenvolvimento digital e consultoria de presença online com estilo minimalista e foco em resultados." />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=JCruz" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JCruz" />
+    <meta name="twitter:description" content="Design de sites, desenvolvimento digital e consultoria de presença online com estilo minimalista e foco em resultados." />
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=JCruz" />
+
+    <style>
+      :root {
+        font-family: Inter, Arial, sans-serif;
+        font-size: clamp(14px, 1.15vw, 16px);
+        color: #111;
+        background: #f5f4ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #f7f5f0 0%, #e6e2d7 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 20%);
+        pointer-events: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.75rem clamp(1rem, 3vw, 2rem);
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+      }
+
+      .brand-visual {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1rem;
+        background: #111;
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .brand-text {
+        font-size: 0.85rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      nav {
+        display: flex;
+        gap: 0.7rem;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 28px rgba(17, 24, 39, 0.12);
+      }
+
+      .button-primary {
+        background: #1b4f72;
+        color: #fff;
+      }
+
+      .button-secondary {
+        background: rgba(27, 79, 114, 0.08);
+        color: #1b4f72;
+      }
+
+      .main-hero {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 4rem clamp(1rem, 3vw, 2rem) 3rem;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: clamp(2.8rem, 6vw, 5.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+
+      .hero-subtitle {
+        margin: 1.85rem 0 0;
+        max-width: 720px;
+        font-size: clamp(1rem, 1.4vw, 1.2rem);
+        line-height: 1.8;
+        color: #4f4f4f;
+      }
+
+      .section {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 2.5rem clamp(1rem, 3vw, 2rem);
+      }
+
+      .section + .section {
+        border-top: 1px solid rgba(17, 24, 39, 0.08);
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .cards {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .card {
+        padding: 1.8rem;
+        border-radius: 1.25rem;
+        background: #ffffff;
+        border: 1px solid rgba(17, 24, 39, 0.08);
+        transition: transform 0.24s ease, box-shadow 0.24s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 45px rgba(17, 24, 39, 0.08);
+      }
+
+      .card-title {
+        margin: 0 0 0.85rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.02em;
+      }
+
+      .card-text {
+        margin: 0;
+        line-height: 1.75;
+        color: #565656;
+      }
+
+      .highlight {
+        color: #1b4f72;
+        font-weight: 700;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 2rem clamp(1rem, 3vw, 2rem);
+        color: #6f6f6f;
+        font-size: 0.95rem;
+      }
+
+      .button.icon {
+        width: 2.75rem;
+        height: 2.75rem;
+        padding: 0;
+        border-radius: 0.95rem;
+      }
+
+      @media (max-width: 760px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .hero-title {
+          font-size: clamp(2.2rem, 8vw, 4rem);
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .button,
+        .button-primary,
+        .button-secondary {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <div class="brand-visual">J</div>
+        <div class="brand-text">JCruz</div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a class="button button-secondary" href="#servicos">Serviços</a>
+        <a class="button button-secondary" href="#projetos">Projetos</a>
+        <a class="button button-primary" href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-hero">
+        <h1 class="hero-title">Um lugar único!</h1>
+        <p class="hero-subtitle">
+          Experiências simples e profissionais.
+        </p>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="grid cards">
+          <article class="card">
+            <h2 class="card-title">Portfólios</h2>
+            <p class="card-text">
+              Design que valoriza seu conteúdo.
+            </p>
+          </article>
+          <article class="card">
+            <h2 class="card-title">Consultoria</h2>
+            <p class="card-text">
+              Ideias para melhorar seu conteúdo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="grid cards">
+          <article class="card">
+            <h2 class="card-title">Projetos recentes</h2>
+            <p class="card-text">
+              Nossos trabalhos recentes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="grid cards">
+          <article class="card">
+            <h2 class="card-title">ENTRE EM CONTATO</h2>
+            <p class="card-text">
+              Estamos prontos para ajudar a transformar sua ideia em realidade.
+            </p>
+            <p class="card-text">
+              <span class="highlight">Email:</span> contato@jessdigital.com
+            </p>
+            <a class="button button-primary" href="mailto:contato@jessdigital.com">Enviar e-mail</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2026 JCruz. Todos os direitos reservados.
+    </footer>
+  </body>
+</html>
